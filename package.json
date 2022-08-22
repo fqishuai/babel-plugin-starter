@@ -1,0 +1,39 @@
+{
+  "name": "babel-plugin-starter",
+  "version": "1.0.0",
+  "description": "A starter for creating your own babel plugin",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf ./lib",
+    "build": "babel src -d lib",
+    "test": "jest __tests__/index.js",
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "keywords": [
+    "babel-plugin",
+    "babel",
+    "plugin",
+    "starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fqishuai/babel-plugin-starter.git"
+  },
+  "author": "fqishuai",
+  "bugs": {
+    "url": "https://github.com/fqishuai/babel-plugin-starter/issues"
+  },
+  "homepage": "https://github.com/fqishuai/babel-plugin-starter#readme"
+}
